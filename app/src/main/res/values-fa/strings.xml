@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Varqa</string>
+    <string name="app_name">وارکا</string>
     <string name="slide_1_title">Hello Food!</string>
     <string name="slide_1_desc">The easiest way to order food from yout favourite restraount!</string>
 
@@ -12,22 +13,22 @@
     <string name="slide_4_title">World Travel</string>
     <string name="slide_4_desc">Book tickets for any transportation and travel the world</string>
 
-    <string name="skip">Skip</string>
-    <string name="next">Next</string>
-    <string name="lets">Lets start</string>
+    <string name="skip">رد کردن</string>
+    <string name="next">بعدی</string>
+    <string name="lets">شروع کردن</string>
     <string name="english">English</string>
     <string name="persian">فارسی</string>
-    <string name="internet">Network not available</string>
-    <string name="net"> please check your connection...</string>
-    <string name="varqa">Varqa</string>
-    <string name="sale">Sell and enjoy</string>
-    <string name="powered">Powered by Folk</string>
+    <string name="internet">شبکه موجود نمیباشد</string>
+    <string name="net"> لطفا اتصال اینترنت خود را بررسی کنید</string>
+    <string name="varqa">وارکا</string>
+    <string name="sale">بفروش و لذت ببر</string>
+    <string name="powered">قدرت گرفته از فلک</string>
     <string name="hi">Hi!</string>
-    <string name="welcom">wellcom</string>
-    <string name="choose">Choose your language:</string>
+    <string name="welcom">welcom</string>
+    <string name="choose">زبان مورد نظر را انتخاب کنید</string>
     <string name="hi_fa">سلام!</string>
+    <string name="refresh">تلاش دوباره</string>
     <string name="wellcom_fa">خوش آمدید</string>
-    <string name="refresh">Refresh</string>
     <string-array name="slide_titles">
         <item>@string/slide_1_title</item>
         <item>@string/slide_2_title</item>
