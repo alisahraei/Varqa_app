@@ -15,18 +15,15 @@
     <string name="skip">Skip</string>
     <string name="next">Next</string>
     <string name="lets">Lets start</string>
-    <string name="english">English</string>
-    <string name="persian">فارسی</string>
+
     <string name="internet">Network not available</string>
-    <string name="net"> please check your connection...</string>
+    <string name="net"> please check your connection…</string>
     <string name="varqa">Varqa</string>
     <string name="sale">Sell and enjoy</string>
     <string name="powered">Powered by Folk</string>
     <string name="hi">Hi!</string>
-    <string name="welcom">wellcom</string>
+    <string name="wellcom">wellcom</string>
     <string name="choose">Choose your language:</string>
-    <string name="hi_fa">سلام!</string>
-    <string name="wellcom_fa">خوش آمدید</string>
     <string name="refresh">Refresh</string>
     <string-array name="slide_titles">
         <item>@string/slide_1_title</item>
