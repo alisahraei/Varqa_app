@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C80A5A"
+    android:background="#347a79"
     tools:context=".SplashScreenActivity">
     <com.airbnb.lottie.LottieAnimationView
         android:layout_width="350dp"
@@ -20,7 +20,7 @@
         android:layout_height="150dp"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/ic_launcher_background"
+        android:background="@drawable/varqa"
         android:id="@+id/logo"
         />
     <LinearLayout
