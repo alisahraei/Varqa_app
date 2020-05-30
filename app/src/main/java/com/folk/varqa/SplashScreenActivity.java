@@ -49,9 +49,6 @@ public class SplashScreenActivity extends AppCompatActivity {
             @Override
             public void run() {
                 Intent intent;
-//              if (langpref.startLang()){
-//                  intent = new Intent(SplashScreenActivity.this, LanguageActivity.class);
-//              } else
                 if (!prefMan.startSlider()) {
                     intent = new Intent(SplashScreenActivity.this, MainActivity.class);
                 } else {
