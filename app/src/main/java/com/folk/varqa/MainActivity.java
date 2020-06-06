@@ -5,21 +5,28 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
+import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 WebView webView;
 String url = "https://web.varqa.ir/";
 boolean doubleBackToExitPressedOnce = false;
+ProgressBar progressBar;
+TextView textview;
     @SuppressLint({"JavascriptInterface", "SetJavaScriptEnabled"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         webView = findViewById(R.id.webview);
+        progressBar = findViewById(R.id.pb);
+        textview = findViewById(R.id.tv);
         webView.setWebViewClient(new WebViewClient());
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
@@ -42,6 +49,19 @@ boolean doubleBackToExitPressedOnce = false;
         if (getSupportActionBar() != null){
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
+        webView.setWebChromeClient(new WebChromeClient() {
+            public void onProgressChanged(WebView view, int progress) {
+                if(progress < 100 && progressBar.getVisibility() == ProgressBar.GONE){
+                    progressBar.setVisibility(ProgressBar.VISIBLE);
+                    textview.setVisibility(View.VISIBLE);
+                }
+                progressBar.setProgress(progress);
+                if(progress == 100) {
+                    progressBar.setVisibility(ProgressBar.GONE);
+                    textview.setVisibility(View.GONE);
+                }
+            }
+        });
     }
     @Override
     public void onBackPressed() {
